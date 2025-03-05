@@ -1,23 +1,23 @@
 #  SharedSkillet Project
 ### AI-Powered Recipe Platform with Image Recognition & Food Delivery
 
-🚀 *Day 1 Progress Report*  
-📅 *Date: $(date +"%B %d, %Y")*
+*Week 1 Progress Report*  
+📅 *Date: March 7, 2025*
 
 ---
 
 ##  Overview
 The **SharedSkillet** project aims to create an AI-driven recipe platform that allows users to:
-✅ Upload food images and get matching recipes  
-✅ Generate grocery lists using AI  
-✅ Order prepared meals (within 50 miles)  
-✅ Access a vast collection of traditional & customized recipes  
+- Upload food images and get matching recipes  
+- Generate grocery lists using AI  
+- Order prepared meals (within 50 miles)  
+- Access a vast collection of traditional & customized recipes  
 
-On **Day 1**, I focused on setting up the foundation, including the **Git repository, folder structure, remote setup, and domain configuration**.
+On **Week 1**, I focused on setting up the foundation, including the **Git repository, folder structure, remote setup, and domain configuration**.
 
 ---
 
-## ✅ Day 1 Tasks Completed
+## Day 1 Tasks Completed
 ### 🛠 1️⃣ Project Initialization (Local Setup)
 - Created the project directory and initialized Git  
 - Structured the project with essential folders  
@@ -100,29 +100,29 @@ SharedSkillet/
 ---
 
 ## 🔜 Next Steps (Day 2 Plan)
-📌 **Set up AWS S3** for storing recipe videos & static assets  
-📌 **Decide backend framework** (Flask/Django for Python, Node.js for JavaScript)  
-📌 **Start database design** (RDS or DynamoDB for structured data)  
-📌 **Basic API setup** (GET /recipes, GET /recipes/:id)  
+ **Set up AWS S3** for storing recipe videos & static assets  
+ **Decide backend framework** (Flask/Django for Python, Node.js for JavaScript)  
+ **Start database design** (RDS or DynamoDB for structured data)  
+ **Basic API setup** (GET /recipes, GET /recipes/:id)  
 
 ---
 
 ### 🎯 Summary
-✔️ **Git repository initialized & pushed to GitHub**  
-✔️ **Folder structure organized** for backend, frontend, infra, and data  
-✔️ **Route 53 DNS configured** and domain linked to AWS  
-✔️ **Plan defined for Day 2**  
+ -**Git repository initialized & pushed to GitHub**  
+ -**Folder structure organized** for backend, frontend, infra, and data  
+ -**Route 53 DNS configured** and domain linked to AWS  
+ -**Plan defined for Day 2**  
 
 ---
 
 ### 👨‍💻 Contributors
-- [Your Name](https://github.com/Nahiyan140212) (Founder & Developer)
+- [Nahiyan Bin Noor](https://github.com/Nahiyan140212) (Founder & Developer)
 
-💡 *This is just the beginning! Excited to build this AI-powered recipe platform!* 🚀
+ *This is just the beginning! Excited to build this AI-powered recipe platform!* 
 
 ---
 
-### 🤝 How to Contribute
+###  How to Contribute
 1. **Clone the repository**  
    \`\`\`bash
    git clone https://github.com/Nahiyan140212/SharedSkillet.git
@@ -137,10 +137,10 @@ SharedSkillet/
    git commit -m "Added feature XYZ"
    git push origin feature-name
    \`\`\`
-4. **Open a Pull Request (PR) on GitHub** ✅  
+4. **Open a Pull Request (PR) on GitHub**  
 
 ---
 
-🔥 **SharedSkillet** is evolving. More features coming soon!  
-📌 Stay tuned for more updates! 🚀  
+ **SharedSkillet** is evolving. More features coming soon!  
+ Stay tuned for more updates!  
 
