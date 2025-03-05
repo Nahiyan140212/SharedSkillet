@@ -116,7 +116,7 @@ SharedSkillet/
 ---
 
 ### 👨‍💻 Contributors
-- [Nahiyan Bin Noor](https://github.com/Nahiyan140212) (Founder & Developer)
+- [Nahiyan Bin Noor](https://github.com/Nahiyan140212)
 
  *This is just the beginning! Excited to build this AI-powered recipe platform!* 
 
