@@ -1,0 +1,32 @@
+# FastAPI Framework
+fastapi
+uvicorn
+
+# AWS SDK for Python (For S3, Rekognition, DynamoDB)
+boto3
+
+# Database (PostgreSQL with SQLAlchemy)
+sqlalchemy
+asyncpg
+psycopg2-binary
+
+# Data Validation
+pydantic
+
+# Web Requests
+requests
+
+# Environment Variables
+python-dotenv
+
+# Image Processing (if needed)
+pillow
+
+# Security (Authentication)
+passlib
+bcrypt
+pyjwt
+
+# CORS (Cross-Origin Resource Sharing)
+fastapi[all]
+
