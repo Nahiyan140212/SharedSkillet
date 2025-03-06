@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Skillet | Recipes - Page 5</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        header .logo img {
+            height: 40px;
+        }
+        nav ul { list-style: none; display: flex; gap: 15px; }
+        nav a { color: #fff; text-decoration: none; font-weight: 500; font-size: 0.9em; transition: color 0.3s; }
+        nav a:hover { color: #e67e22; }
+        .search-bar {
+            padding: 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .recipes-section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .recipes-section h2 {
+            font-size: 2em;
+            color: #e67e22;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .recipe-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .recipe-card:hover { transform: translateY(-5px); }
+        .recipe-card iframe {
+            width: 100%;
+            height: 50vw;
+            max-height: 200px;
+            min-height: 150px;
+            border: none;
+        }
+        .recipe-card h3 {
+            font-size: 1.3em;
+            color: #333;
+            padding: 10px;
+        }
+        .recipe-card p {
+            padding: 0 10px 10px;
+            font-size: 0.9em;
+            color: #666;
+            overflow-wrap: break-word;
+            max-height: 100px;
+            overflow-y: auto;
+        }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .pagination a {
+            color: #e67e22;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border: 1px solid #e67e22;
+            border-radius: 5px;
+        }
+        .pagination a:hover { background: #e67e22; color: #fff; }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #fff;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            header { flex-direction: column; padding: 10px; }
+            header .logo img { height: 30px; }
+            nav ul { flex-direction: column; gap: 10px; text-align: center; }
+            .search-bar { margin-top: 80px; }
+            .recipes-section { padding: 10px; margin-top: 120px; }
+            .recipes-section h2 { font-size: 1.5em; margin-bottom: 20px; }
+            .recipe-grid { grid-template-columns: 1fr; gap: 15px; }
+            .recipe-card iframe { height: 50vw; min-height: 150px; }
+            .recipe-card h3 { font-size: 1.1em; }
+            .recipe-card p { font-size: 0.8em; max-height: 80px; }
+            footer { font-size: 0.7em; padding: 8px; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Shared Skillet Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes1.html">Recipes</a></li>
+                <li><a href="index.html#businessPlan" onclick="showBusinessPlan()">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search recipes..." onkeyup="searchRecipes()">
+    </div>
+
+    <section class="recipes-section">
+        <h2>Explore Our Recipes - Page 5</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/11raqgeYGjWa7uKGdKw9zjNoPLf0jmE9l/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Murighonto</h3>
+    <p>Murighonto Recipe- Fry moong dal before washing for few minutes. When cooled down,wash them nicely. Then shallow fry fish marinated with salt, turmeric powder, red chilli powder. Add oil in the pan ,then add whole spices , onion and sautee untill brown. Add red chilli powder, turmeric powder, cumin coriander powder. Then add ginger garlic paste ,onion paste,salt,water and cook untill the oil separates. Later,add the washed lentil ,proper amount of hot water,tomato and cook untill itÛªs properly boiled. Then add the fried fish ,garam masala. For garnishing fry some garlic , whole red chilli. Pour over the curry with the oil</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1BJpDdwn6Qz5Gtrhqt21YOmDwrsax3R4X/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Chicken malai tikka</h3>
+    <p>Now serve the rice with some freshly cut mango and the coconut sauce.</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1Z2ckw7HGyR33Tdtq5meCnZ8H3Tjb-yQS/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Beef Tehari</h3>
+    <p>On the remaining sauce add 1 cup of cooked rice(I just used the normal white cooked rice.Better to use the sticky/sushi rice), some more coconut milk and condensed milk and again cook untill the extra moisture is absorbed.</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1g2ahjWtipPB0MoNWe2qdf3IrHl5oD8Bt/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Spinach Rice</h3>
+    <p>Palak/Spinach Rice' Recipe - Saute some onion in little amount of oil with some panchphoron. Then add ginger garlic paste. Add some mix veggies or meat as per your preference.( I have used chicken keema). Add cumin powder, coriander powder and salt.Then add spinach and 2/3 green chilli paste.When the water will reduce add rice and proper amount of water. Lastly add an egg!</p>
+</div>
+
+        </div>
+        <div class="pagination">
+<a href="recipes1.html">1</a><a href="recipes2.html">2</a><a href="recipes3.html">3</a><a href="recipes4.html">4</a><a href="recipes5.html">5</a><a href="recipes6.html">6</a><a href="recipes7.html">7</a><a href="recipes8.html">8</a>
+        </div>
+    </section>
+
+    <footer>© 2025 Shared Skillet | Crafted with Love ❤️</footer>
+
+    <script>
+        function searchRecipes() {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let cards = document.getElementsByClassName("recipe-card");
+            for (let i = 0; i < cards.length; i++) {
+                let title = cards[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+                let description = cards[i].getElementsByTagName("p")[0].innerText.toLowerCase();
+                if (title.includes(input) || description.includes(input)) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

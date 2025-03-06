@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Skillet | Recipes - Page 7</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        header .logo img {
+            height: 40px;
+        }
+        nav ul { list-style: none; display: flex; gap: 15px; }
+        nav a { color: #fff; text-decoration: none; font-weight: 500; font-size: 0.9em; transition: color 0.3s; }
+        nav a:hover { color: #e67e22; }
+        .search-bar {
+            padding: 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .recipes-section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .recipes-section h2 {
+            font-size: 2em;
+            color: #e67e22;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .recipe-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .recipe-card:hover { transform: translateY(-5px); }
+        .recipe-card iframe {
+            width: 100%;
+            height: 50vw;
+            max-height: 200px;
+            min-height: 150px;
+            border: none;
+        }
+        .recipe-card h3 {
+            font-size: 1.3em;
+            color: #333;
+            padding: 10px;
+        }
+        .recipe-card p {
+            padding: 0 10px 10px;
+            font-size: 0.9em;
+            color: #666;
+            overflow-wrap: break-word;
+            max-height: 100px;
+            overflow-y: auto;
+        }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .pagination a {
+            color: #e67e22;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border: 1px solid #e67e22;
+            border-radius: 5px;
+        }
+        .pagination a:hover { background: #e67e22; color: #fff; }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #fff;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            header { flex-direction: column; padding: 10px; }
+            header .logo img { height: 30px; }
+            nav ul { flex-direction: column; gap: 10px; text-align: center; }
+            .search-bar { margin-top: 80px; }
+            .recipes-section { padding: 10px; margin-top: 120px; }
+            .recipes-section h2 { font-size: 1.5em; margin-bottom: 20px; }
+            .recipe-grid { grid-template-columns: 1fr; gap: 15px; }
+            .recipe-card iframe { height: 50vw; min-height: 150px; }
+            .recipe-card h3 { font-size: 1.1em; }
+            .recipe-card p { font-size: 0.8em; max-height: 80px; }
+            footer { font-size: 0.7em; padding: 8px; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Shared Skillet Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes1.html">Recipes</a></li>
+                <li><a href="index.html#businessPlan" onclick="showBusinessPlan()">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search recipes..." onkeyup="searchRecipes()">
+    </div>
+
+    <section class="recipes-section">
+        <h2>Explore Our Recipes - Page 7</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1At4CVpQVUuozO5ufJ7tVgpXav_yckwb8/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Malai jorda</h3>
+    <p>Shahi Malai Jorda. Recipe- -For the jorda rice take proper amount of water in a pan, add orange food color and orange peel. Once the water starts boiling add the rice (here I have used chinigura rice). When 80% done strain the rice. Now, in another pan take ghee, add whole spices, mixed nuts, raisins and sautee for few seconds. Now add sugar as per your sweet preference and add orange juice. Then add the rice and cook in the sugar syrup by covering. Lastly add milk powder. -For the malai take liquid milk, milk powder and condensed milk in a pan, mix well.Now, turn on the stove and cook untill it thickens. -For the mini sweets take 1/2 cup of milk powder, 1 tbspn semolina, 1 tpsn flour, 1 teaspoon ghee and mix well. Now, make a dough by adding liquid milk. Make small balls and fry in hot oil in medium low heat untill they turn brown. When they cool down a bit add them in hot sugar syrup and let them soak for 10 minutes. Now serve the jorda rice in a dish, pour malai over the rice, garnish with some nuts and the mini sweets.</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1ENjfMaFn4o-EtQgbDo-TZYOK7ptmrkv1/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Shir khurma</h3>
+    <p>Sheer Khurma - Rich and creamy Sheer Khurma is an elegant dessert often made during Eid. SautÌ© some dry fruits(nuts, raisins, dates) and small amount of vermicelli in ghee. Simmer 1 L of milk and stir until it reduces. Mix condense milk, milk powder, corn flour, sugar/sugar substitute all together. Now add the mix with the liquid milk and stir until it thickens.Add dry fruits and vermicelli too. Cook until it reaches your preferred consistency. Let it cool down.</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1i3g5ye-d36SzZgV9lje6fiEHmMGBOH9D/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Tandoori fish</h3>
+    <p>Tandoori Pomfret. Recipe - Make a marinade with youghurt, ginger-garlic paste, pinch of food color, kashmiri red chilli powder, garam masala, cumin-coriander powder, black pepper, lemon juice, salt. Take some mustard oil in a pan, warm it up and add some chilli powder in it. Mix the chilli oil in the marinade. Marinate the pomfrets with the marinade. Bake at 350 farenheit for 50 min and broil for some minutes.</p>
+</div>
+
+        </div>
+        <div class="pagination">
+<a href="recipes1.html">1</a><a href="recipes2.html">2</a><a href="recipes3.html">3</a><a href="recipes4.html">4</a><a href="recipes5.html">5</a><a href="recipes6.html">6</a><a href="recipes7.html">7</a><a href="recipes8.html">8</a>
+        </div>
+    </section>
+
+    <footer>© 2025 Shared Skillet | Crafted with Love ❤️</footer>
+
+    <script>
+        function searchRecipes() {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let cards = document.getElementsByClassName("recipe-card");
+            for (let i = 0; i < cards.length; i++) {
+                let title = cards[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+                let description = cards[i].getElementsByTagName("p")[0].innerText.toLowerCase();
+                if (title.includes(input) || description.includes(input)) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
