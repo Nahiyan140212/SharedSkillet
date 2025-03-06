@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Shared Skillet</title>
     <style>
-        /* Basic CSS styling inside the HTML file */
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background: url('https://source.unsplash.com/1600x900/?cooking,kitchen') center/cover no-repeat; /* Background Image */
             margin: 0;
             padding: 0;
             display: flex;
@@ -16,34 +16,78 @@
             align-items: center;
             justify-content: center;
             height: 100vh; /* Full viewport height */
-            color: #333;
+            text-align: center;
+            color: #fff; /* White text for contrast */
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+            backdrop-filter: blur(5px);
         }
+
+        /* Main Content Styling */
+        .container {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            max-width: 700px;
+        }
+
         h1 {
             color: #e67e22; /* Warm orange for a skillet vibe */
-            font-size: 3em; /* Bigger heading */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            font-size: 2.8em;
+            margin-bottom: 10px;
         }
+
         p {
-            font-size: 1.2em;
-            max-width: 600px;
-            text-align: center;
-            line-height: 1.5;
+            font-size: 1.3em;
+            line-height: 1.6;
         }
+
         .highlight {
             color: #27ae60; /* Green for emphasis */
             font-weight: bold;
         }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 24px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            background: #e67e22; /* Orange button */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #d35400; /* Darker orange */
+        }
+
+        /* Footer */
         footer {
             position: fixed;
             bottom: 10px;
             font-size: 0.9em;
-            color: #777;
+            color: #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>Welcome to <span class="highlight">Shared Skillet</span>—my first website where we’ll cook up something amazing together!</p>
-    <footer>© 2025 Shared Skillet</footer>
+    <div class="container">
+        <h1>Welcome to Shared Skillet! 🍳</h1>
+        <p>We bring you **authentic** and **delicious** recipes from around the world, straight from our kitchen to yours.</p>
+        <p>Whether you're a seasoned chef or a kitchen newbie, <span class="highlight">Shared Skillet</span> is your go-to place for flavorful meals and culinary inspiration.</p>
+        
+        <!-- Call-to-Action Buttons -->
+        <a href="recipes.html" class="btn">Explore Recipes</a>
+        <a href="about.html" class="btn">Learn More</a>
+    </div>
+
+    <footer>© 2025 Shared Skillet | Cooking with Love & Passion ❤️</footer>
 </body>
 </html>
