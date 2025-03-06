@@ -75,6 +75,35 @@
             font-size: 0.9em;
             color: #ddd;
         }
+
+        /* Business Plan Page */
+        .business-plan {
+            display: none; /* Initially hidden */
+            background: rgba(0, 0, 0, 0.85);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: left;
+            line-height: 1.5;
+            overflow-y: auto;
+            height: 90vh;
+        }
+
+        .business-plan h2 {
+            color: #e67e22;
+        }
+
+        .close-btn {
+            display: block;
+            background: #d35400;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            margin: 20px auto 0;
+            width: 120px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -85,9 +114,61 @@
         
         <!-- Call-to-Action Buttons -->
         <a href="https://drive.google.com/drive/folders/10GVMCzCD2RFEqtklCmbJylTPzq7Vo4qt?usp=sharing" target="_blank" class="btn">Explore Recipes</a>
-        <a href="about.html" class="btn">Learn More</a>
+        <a href="#" class="btn" onclick="showBusinessPlan()">Learn More</a>
+    </div>
+
+    <!-- Business Plan Section -->
+    <div id="businessPlan" class="business-plan">
+        <h2>Shared Skillet Business Plan</h2>
+        <p><strong>1. Vision & Mission:</strong><br>
+           Our goal is to make cooking more accessible, fun, and culturally enriching. <br>
+           <strong>Vision:</strong> Become the leading online platform for traditional and modern recipes with AI-powered cooking assistance.</p>
+
+        <p><strong>2. Business Model:</strong><br>
+           - **Recipe Upload & AI Cooking Assistant**: Users can upload and share their own recipes.<br>
+           - **Food Image Recognition & LLM Integration**: AI suggests recipes based on uploaded images.<br>
+           - **On-Demand Cooking & Delivery**: Catered food delivery for special events.</p>
+
+        <p><strong>3. Revenue Streams:</strong><br>
+           - **Subscription Plans** for exclusive AI-powered cooking guides.<br>
+           - **Catering Services** with local chefs and meal preps.<br>
+           - **Affiliate Marketing** through kitchen tools and ingredient partnerships.</p>
+
+        <p><strong>4. Market Strategy:</strong><br>
+           - Leverage **SEO & Social Media** to attract home cooks and food lovers.<br>
+           - Collaborate with **YouTube & Facebook food influencers** to promote content.<br>
+           - Use **AI-driven recommendations** to engage users with personalized meal ideas.</p>
+
+        <p><strong>5. Technology Stack:</strong><br>
+           - **Frontend**: TypeScript, React, Tailwind CSS.<br>
+           - **Backend**: Python (FastAPI/Django), PostgreSQL, AWS Lambda.<br>
+           - **AI/ML**: Hugging Face models for LLM-based cooking suggestions.<br>
+           - **Cloud Infrastructure**: AWS S3, Route 53, CloudFront for hosting.</p>
+
+        <p><strong>6. Competitive Edge:</strong><br>
+           - **AI-powered Recipe Assistant** – Unlike traditional cooking websites, we offer interactive AI guidance.<br>
+           - **Cultural Authenticity** – Recipes from diverse backgrounds, including personal family favorites.<br>
+           - **Community Engagement** – Encouraging users to share and modify recipes.</p>
+
+        <p><strong>7. Roadmap:</strong><br>
+           - **Phase 1:** Launch MVP with AI recipe assistant & image recognition.<br>
+           - **Phase 2:** Introduce premium subscription plans.<br>
+           - **Phase 3:** Expand into catering & delivery partnerships.<br>
+           - **Phase 4:** Scale using advanced AI models for personalized nutrition recommendations.</p>
+
+        <div class="close-btn" onclick="hideBusinessPlan()">Close</div>
     </div>
 
     <footer>© 2025 Shared Skillet | Cooking with Love & Passion ❤️</footer>
+
+    <script>
+        function showBusinessPlan() {
+            document.getElementById('businessPlan').style.display = 'block';
+        }
+
+        function hideBusinessPlan() {
+            document.getElementById('businessPlan').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
