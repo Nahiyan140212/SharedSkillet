@@ -18,3 +18,5 @@ data
 *.env
 aws-credentials.json
 data
+
+Archive

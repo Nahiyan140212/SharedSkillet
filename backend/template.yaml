@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  SharedSkilletApi:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda_handler.lambda_handler
+      Runtime: python3.11
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+      Policies:
+        - AWSLambdaBasicExecutionRole
+        - AmazonDynamoDBFullAccess
+        - AmazonS3ReadOnlyAccess
+        - AmazonRekognitionFullAccess
+        - AmazonBedrockFullAccess
+      Environment:
+        Variables:
+          STRIPE_API_KEY: !Ref StripeAPIKey
+Parameters:
+  StripeAPIKey:
+    Type: String
+    Description: Stripe API Key
