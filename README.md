@@ -29,7 +29,7 @@
 
 ---
 
-**📂 Project Folder Structure as of March 8, 2024**
+**📂 Frontend Folder Structure as of March 8, 2024**
 frontend/
 ├── src/                    # React application source code
 │   ├── components/         # Reusable React components
