@@ -1,11 +1,10 @@
 # SharedSkillet
-Here is our initial MVP: 
-
-[Shared Skillet](https://SharedSkillet.com) 
+Here is our initial MVP:  [Shared Skillet](https://SharedSkillet.com) 
 
 
 *This is just the beginning! Excited to build this AI-powered recipe platform!* 
 
+---
 
 ## AI-Powered Recipe Platform with Image Recognition & Food Delivery  
 
@@ -74,7 +73,7 @@ frontend/
 ├── package.json            # Node.js dependencies & scripts
 └── tsconfig.json           # TypeScript configuration
 
-
+```
 
 Updated by: [Nahiyan Bin Noor](https://github.com/Nahiyan140212)
 - 
