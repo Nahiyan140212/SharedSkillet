@@ -1,4 +1,8 @@
 # SharedSkillet
+Here is our initial MVP: [Shared Skillet](https://SharedSkillet.com) 
+*This is just the beginning! Excited to build this AI-powered recipe platform!* 
+
+
 ## AI-Powered Recipe Platform with Image Recognition & Food Delivery  
 
 🚀 **SharedSkillet** is a smart recipe platform that lets users:  
