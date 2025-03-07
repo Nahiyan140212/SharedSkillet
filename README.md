@@ -38,6 +38,8 @@ Here is our initial MVP:
 ---
 
 **📂 Frontend Folder Structure as of March 8, 2024**
+
+
 frontend/
 ├── src/                    
 │   ├── components/         
