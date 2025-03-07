@@ -37,8 +37,6 @@ Here is our initial MVP:  [Shared Skillet](https://SharedSkillet.com)
 ---
 ## 📂 Backend Folder Structure _(Updated: March 8, 2024)_
 
-# 📂 SharedSkillet - Project Structure
-
 ```plaintext
 SharedSkillet/
 ├── backend/                 # Backend service (FastAPI, AI, Payments, Database)
