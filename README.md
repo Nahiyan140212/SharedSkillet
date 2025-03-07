@@ -1,5 +1,9 @@
 # SharedSkillet
-Here is our initial MVP: [Shared Skillet](https://SharedSkillet.com) 
+Here is our initial MVP: 
+
+[Shared Skillet](https://SharedSkillet.com) 
+
+
 *This is just the beginning! Excited to build this AI-powered recipe platform!* 
 
 
