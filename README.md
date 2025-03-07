@@ -37,38 +37,40 @@ Here is our initial MVP:  [Shared Skillet](https://SharedSkillet.com)
 ---
 ## 📂 Backend Folder Structure _(Updated: March 8, 2024)_
 
+# 📂 SharedSkillet - Project Structure
+
 ```plaintext
 SharedSkillet/
-├── backend/
-│   ├── app/
-│   │   ├── main.py
-│   │   ├── models.py
-│   │   ├── ai.py
-│   │   ├── database.py
-│   │   └── payments.py
-│   ├── lambda_handler.py
-│   ├── requirements.txt
-│   └── template.yaml
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── App.tsx
-│   │   ├── index.tsx
-│   │   └── tailwind.config.js
-│   ├── public/
-│   ├── package.json
-│   └── tsconfig.json
-├── infra/
-│   ├── cdk/
-│   └── deploy.sh
-├── data/
-│   └── recipes.csv
-├── docs/
-│   └── progress.md
-├── .gitignore
-└── README.md
+├── backend/                 # Backend service (FastAPI, AI, Payments, Database)
+│   ├── app/                 # Core application logic
+│   │   ├── main.py          # FastAPI main entry point
+│   │   ├── models.py        # Database models (SQLAlchemy/DynamoDB)
+│   │   ├── ai.py            # AI-powered recipe generation (GPT-4 integration)
+│   │   ├── database.py      # Database connection setup
+│   │   └── payments.py      # Payment processing (Stripe integration)
+│   ├── lambda_handler.py    # AWS Lambda handler for serverless execution
+│   ├── requirements.txt     # Python dependencies
+│   └── template.yaml        # AWS SAM template for deployment
+├── frontend/                # React (TypeScript) frontend
+│   ├── src/                 # Frontend source code
+│   │   ├── components/      # Reusable React components
+│   │   ├── pages/           # Page-level components (Home, Recipes, Orders)
+│   │   ├── services/        # API service calls (Axios, Cognito Auth)
+│   │   ├── App.tsx          # Main app component
+│   │   ├── index.tsx        # React entry point
+│   │   └── tailwind.config.js  # TailwindCSS configuration
+│   ├── public/              # Static assets (HTML, images, icons)
+│   ├── package.json         # Node.js dependencies & scripts
+│   └── tsconfig.json        # TypeScript configuration
+├── infra/                   # Infrastructure as Code (AWS CDK, deployment scripts)
+│   ├── cdk/                 # AWS CDK resources for infrastructure provisioning
+│   └── deploy.sh            # Deployment script
+├── data/                    # Dataset storage (recipes, user data)
+│   └── recipes.csv          # CSV file containing recipe dataset
+├── docs/                    # Documentation & progress tracking
+│   └── progress.md          # Development progress & notes
+├── .gitignore               # Ignore unnecessary files in Git
+└── README.md                # Project documentation
 
 ```
 
