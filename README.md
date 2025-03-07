@@ -35,6 +35,42 @@ Here is our initial MVP:  [Shared Skillet](https://SharedSkillet.com)
 **Payments:** Stripe / Amazon Pay  
 
 ---
+## 📂 Backend Folder Structure _(Updated: March 8, 2024)_
+
+```plaintext
+SharedSkillet/
+├── backend/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   ├── ai.py
+│   │   ├── database.py
+│   │   └── payments.py
+│   ├── lambda_handler.py
+│   ├── requirements.txt
+│   └── template.yaml
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.tsx
+│   │   ├── index.tsx
+│   │   └── tailwind.config.js
+│   ├── public/
+│   ├── package.json
+│   └── tsconfig.json
+├── infra/
+│   ├── cdk/
+│   └── deploy.sh
+├── data/
+│   └── recipes.csv
+├── docs/
+│   └── progress.md
+├── .gitignore
+└── README.md
+
+```
 
 
 The **frontend** built using **React (TypeScript), TailwindCSS, and AWS services**.
@@ -75,6 +111,7 @@ frontend/
 └── tsconfig.json           # TypeScript configuration
 
 ```
+
 
 Updated by: [Nahiyan Bin Noor](https://github.com/Nahiyan140212)
 - 
