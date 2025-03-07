@@ -37,37 +37,43 @@ Here is our initial MVP:
 
 ---
 
-**📂 Frontend Folder Structure as of March 8, 2024**
 
+The **frontend** built using **React (TypeScript), TailwindCSS, and AWS services**.
 
+---
+
+## 📂 Frontend Folder Structure _(Updated: March 8, 2024)_
+
+```plaintext
 frontend/
 ├── src/                    
-│   ├── components/         
-│   │   ├── RecipeCard.tsx  
-│   │   ├── SearchBar.tsx   
-│   │   ├── OrderForm.tsx   
-│   │   └── Header.tsx      
-│   ├── pages/              
-│   │   ├── Home.tsx        
-│   │   ├── Recipes.tsx     
-│   │   └── Orders.tsx      
-│   ├── services/           
-│   │   ├── api.ts          
-│   │   └── auth.ts         
-│   ├── App.tsx             
-│   ├── index.tsx           
-│   └── tailwind.config.js  
-├── public/                 
-│   ├── index.html          
-│   ├── recipes1.html       
-│   ├── recipes2.html       
-│   ├── recipes3.html       
-│   ├── recipes4.html      
-│   ├── logo.png            
-│   ├── cooking-hero.jpg    
-│   └── favicon.ico         
-├── package.json            
-└── tsconfig.json           
+│   ├── components/         # Reusable React components
+│   │   ├── RecipeCard.tsx  # Displays recipes dynamically
+│   │   ├── SearchBar.tsx   # Search bar for filtering recipes
+│   │   ├── OrderForm.tsx   # Order placement form
+│   │   └── Header.tsx      # App header with navigation & logo
+│   ├── pages/              # Page-level React components
+│   │   ├── Home.tsx        # Homepage (Replaces index.html)
+│   │   ├── Recipes.tsx     # AI-generated recipes display
+│   │   └── Orders.tsx      # Order tracking page
+│   ├── services/           # API service calls (FastAPI integration)
+│   │   ├── api.ts          # Handles API requests using Axios
+│   │   └── auth.ts         # AWS Cognito authentication
+│   ├── App.tsx             # Main app component (Routing)
+│   ├── index.tsx           # Entry point for React app
+│   └── tailwind.config.js  # Tailwind CSS configuration
+├── public/                 # Static assets (served via React or S3)
+│   ├── index.html          # Fallback HTML page
+│   ├── recipes1.html       # Legacy static recipe page 1
+│   ├── recipes2.html       # Legacy static recipe page 2
+│   ├── recipes3.html       # Legacy static recipe page 3
+│   ├── recipes4.html       # Legacy static recipe page 4
+│   ├── logo.png            # Project logo
+│   ├── cooking-hero.jpg    # Homepage hero image
+│   └── favicon.ico         # Browser icon (optional)
+├── package.json            # Node.js dependencies & scripts
+└── tsconfig.json           # TypeScript configuration
+
 
 
 Updated by: [Nahiyan Bin Noor](https://github.com/Nahiyan140212)
