@@ -31,33 +31,33 @@
 
 **📂 Frontend Folder Structure as of March 8, 2024**
 frontend/
-├── src/                    # React application source code
-│   ├── components/         # Reusable React components
-│   │   ├── RecipeCard.tsx  # Component for displaying recipes
-│   │   ├── SearchBar.tsx   # Component for searching recipes
-│   │   ├── OrderForm.tsx   # Component for placing food orders
-│   │   └── Header.tsx      # Header component with logo and navigation
-│   ├── pages/              # Page-level components (mapped to routes)
-│   │   ├── Home.tsx        # Homepage (Replaces index.html)
-│   │   ├── Recipes.tsx     # AI-powered recipe page
-│   │   └── Orders.tsx      # Order tracking & history
-│   ├── services/           # API service calls (FastAPI integration)
-│   │   ├── api.ts          # Handles Axios API calls to FastAPI
-│   │   └── auth.ts         # User authentication (AWS Cognito)
-│   ├── App.tsx             # Main app component (Handles routing)
-│   ├── index.tsx           # Entry point for React
-│   └── tailwind.config.js  # Tailwind CSS configuration
-├── public/                 # Static assets (served by React or S3)
-│   ├── index.html          # Fallback HTML (redirects to React)
-│   ├── recipes1.html       # Legacy static recipe page 1
-│   ├── recipes2.html       # Legacy static recipe page 2
-│   ├── recipes3.html       # Legacy static recipe page 3
-│   ├── recipes4.html       # Legacy static recipe page 4
-│   ├── logo.png            # Project logo
-│   ├── cooking-hero.jpg    # Homepage hero image
-│   └── favicon.ico         # Browser tab icon (optional)
-├── package.json            # Node.js dependencies & scripts
-└── tsconfig.json           # TypeScript configuration
+├── src/                    
+│   ├── components/         
+│   │   ├── RecipeCard.tsx  
+│   │   ├── SearchBar.tsx   
+│   │   ├── OrderForm.tsx   
+│   │   └── Header.tsx      
+│   ├── pages/              
+│   │   ├── Home.tsx        
+│   │   ├── Recipes.tsx     
+│   │   └── Orders.tsx      
+│   ├── services/           
+│   │   ├── api.ts          
+│   │   └── auth.ts         
+│   ├── App.tsx             
+│   ├── index.tsx           
+│   └── tailwind.config.js  
+├── public/                 
+│   ├── index.html          
+│   ├── recipes1.html       
+│   ├── recipes2.html       
+│   ├── recipes3.html       
+│   ├── recipes4.html      
+│   ├── logo.png            
+│   ├── cooking-hero.jpg    
+│   └── favicon.ico         
+├── package.json            
+└── tsconfig.json           
 
 
 Updated by: [Nahiyan Bin Noor](https://github.com/Nahiyan140212)
