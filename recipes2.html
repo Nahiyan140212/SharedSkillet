@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Skillet | Recipes - Page 2</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        header .logo img {
+            height: 40px;
+        }
+        nav ul { list-style: none; display: flex; gap: 15px; }
+        nav a { color: #fff; text-decoration: none; font-weight: 500; font-size: 0.9em; transition: color 0.3s; }
+        nav a:hover { color: #e67e22; }
+        .search-bar {
+            padding: 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .recipes-section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .recipes-section h2 {
+            font-size: 2em;
+            color: #e67e22;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .recipe-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .recipe-card:hover { transform: translateY(-5px); }
+        .recipe-card iframe {
+            width: 100%;
+            height: 50vw;
+            max-height: 200px;
+            min-height: 150px;
+            border: none;
+        }
+        .recipe-card h3 {
+            font-size: 1.3em;
+            color: #333;
+            padding: 10px;
+        }
+        .recipe-card p {
+            padding: 0 10px 10px;
+            font-size: 0.9em;
+            color: #666;
+            overflow-wrap: break-word;
+            max-height: 100px;
+            overflow-y: auto;
+        }
+        .pagination {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .pagination a {
+            color: #e67e22;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border: 1px solid #e67e22;
+            border-radius: 5px;
+        }
+        .pagination a:hover { background: #e67e22; color: #fff; }
+        .see-more-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #e67e22;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 0.9em;
+            text-align: center;
+            max-width: 200px;
+        }
+        .see-more-button:hover { background: #d35400; }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #fff;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            header { flex-direction: column; padding: 10px; }
+            header .logo img { height: 30px; }
+            nav ul { flex-direction: column; gap: 10px; text-align: center; }
+            .search-bar { margin-top: 80px; }
+            .recipes-section { padding: 10px; margin-top: 120px; }
+            .recipes-section h2 { font-size: 1.5em; margin-bottom: 20px; }
+            .recipe-grid { grid-template-columns: 1fr; gap: 15px; }
+            .recipe-card iframe { height: 50vw; min-height: 150px; }
+            .recipe-card h3 { font-size: 1.1em; }
+            .recipe-card p { font-size: 0.8em; max-height: 80px; }
+            footer { font-size: 0.7em; padding: 8px; }
+            .see-more-button { max-width: 150px; font-size: 0.8em; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.png" alt="Shared Skillet Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes1.html">Recipes</a></li>
+                <li><a href="index.html#businessPlan" onclick="showBusinessPlan()">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search recipes..." onkeyup="searchRecipes()">
+    </div>
+
+    <section class="recipes-section">
+        <h2>Explore Our Recipes - Page 2</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1ps4s7ueBS1wnqXy7DVL3V__SMmmHhuec/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Chicken kala bhuna</h3>
+    <p>Chicken Kala Bhuna</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1UuH9cqNALDXaKnUR-SIaaVsSbTyFC0_e/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Kofta biriyani</h3>
+    <p>Chicken Kofta Biriyani. A mild, less spicy yet delish biriyani for those who can't handle too much spicy. Recipe - Make kofta by making a keema with chicken, onion, green chilli, ginger garlic paste, salt, red chilli powder, cumin-coriander powder, garam masala and corn flour. Shape them into balls and airfry. Now make a paste with onion, green chilli, almond , raisin and poppy seed. In a pan take oil. Once hot add whole spices, onion and sautee till the onion turns brown. Now, add the paste and beaten youghurt,green chilli.Add garam masala, any biriyani masala ( I used radhuni hydrabadi briyani masala), kewra water, rose water, ginger garlic paste and black pepper.Cook untill the oil separates. Then add pre soaked rice, mix well with the gravy. Lastly add proper amount of hot water, salt, liquid milk and ghee.When the rice is halfway done add the chicken balls, cover and let it cook untill the water is reabsorbed. Garnish with some fried onions, cashews and raisins.</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1DyQdtqZCSOCAguW8rXVREsPgvGNYP0FA/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Mango sticky rice</h3>
+    <p>Coconut sticky rice with mango</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1FvbwZoRkY7_EZqBufEAuGSrTyhMDnCuo/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Kachagolla</h3>
+    <p>For the coconut sauce -In a pan take 1 cup of coconut milk, 1 tablespoon of condensed milk, a slurry made with corn flour and milk powder, vanilla essence. (add sugar if you like it to be more sweet). Turn on the stove.Cook untill it thickens.Pour some aside for garnishing.</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1IVJl863FxSO0TfVWzPW5rQQiIvQcNmAX/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Garlic pickle</h3>
+    <p>Garlic Pickle || Recipe - In a pan take good amount of mustard oil, sautee some panch phoron (whole five spice mix).  Then add cloves of garlic, some dried red chilli, cumin-coriander powder, garam masala and a masala made with roasted cumin, mustard seeds, black cumin, cardamom, cinnamon and bay leaves. Then add ginger garlic paste, tamarind paste and jaggery powder. Simmer untill the garlics are soft.</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1INTy-4BXyPw5Ogkpv0WMJTi_ZuR0NvWR/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Hot and sour soup</h3>
+    <p>Hot and sour soup. Soup season is here. Easiest soup recipe from scratch. In a pan take water, add soya sauce , tomato-chilli sauce, chilli flakes, black pepper, chicken bullion, some veggies, chicken cubes, ginger, sugar/any sugar substitute and cook untill the chicken and veggies ar cooked. Then add cornflour slurry and lastly add beaten eggs.</p>
+</div>
+<div class="recipe-card">
+    <iframe src="https://drive.google.com/file/d/1QJtWwy_YEk5ZEH6HfQ3HAXW8qqWistZb/preview" allow="autoplay" loading="lazy"></iframe>
+    <h3>Fried rice</h3>
+    <p>In a pan take butter and scrumble egg. Add sliced onion, shrimps, sausages and sautee for few minutes.  Now add cooked rice, veggies of your choice ( Saute them before adding rice if they need more time to cook). Add black pepper, paprika, garlic powder, soya sauce, sesame oil, bbq sauce, chilli sauce. Stir everything nicely. Make sure to cook at high temperature. Enjoy!</p>
+</div>
+
+        </div>
+        <div class="pagination">
+<a href="recipes1.html">1</a><a href="recipes2.html">2</a><a href="recipes3.html">3</a><a href="recipes4.html">4</a><a href="recipes5.html">5</a>
+        </div>
+        <a href="https://drive.google.com/drive/folders/10GVMCzCD2RFEqtklCmbJylTPzq7Vo4qt?usp=sharing" class="see-more-button">See More Recipes</a>
+    </section>
+
+    <footer>© 2025 Shared Skillet | Crafted with Love ❤️</footer>
+
+    <script>
+        function searchRecipes() {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let cards = document.getElementsByClassName("recipe-card");
+            for (let i = 0; i < cards.length; i++) {
+                let title = cards[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+                let description = cards[i].getElementsByTagName("p")[0].innerText.toLowerCase();
+                if (title.includes(input) || description.includes(input)) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
