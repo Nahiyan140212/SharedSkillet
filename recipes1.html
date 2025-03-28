@@ -80,13 +80,23 @@
             color: #333;
             padding: 10px;
         }
-        .recipe-card p {
-            padding: 0 10px 10px;
+        .recipe-card .button-container {
+            padding: 10px;
+            text-align: center;
+        }
+        .recipe-card .order-btn {
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
             font-size: 0.9em;
-            color: #666;
-            overflow-wrap: break-word;
-            max-height: 100px;
-            overflow-y: auto;
+            font-weight: 500;
+            transition: all 0.3s;
+            background: #e67e22;
+            color: #fff;
+            display: inline-block;
+        }
+        .recipe-card .order-btn:hover {
+            background: #d35400;
         }
         .pagination {
             text-align: center;
@@ -134,7 +144,8 @@
             .recipe-grid { grid-template-columns: 1fr; gap: 15px; }
             .recipe-card iframe { height: 50vw; min-height: 150px; }
             .recipe-card h3 { font-size: 1.1em; }
-            .recipe-card p { font-size: 0.8em; max-height: 80px; }
+            .recipe-card .button-container { padding: 8px; }
+            .recipe-card .order-btn { padding: 6px 10px; font-size: 0.8em; }
             footer { font-size: 0.7em; padding: 8px; }
             .see-more-button { max-width: 150px; font-size: 0.8em; }
         }
@@ -163,49 +174,64 @@
         <h2>Explore Our Recipes - Page 1</h2>
         <div class="recipe-grid">
             <div class="recipe-card">
-    <iframe src="https://drive.google.com/file/d/1Or2_6IQfVUpdpXx-JGbKneEb0kj8ogdA/preview" allow="autoplay" loading="lazy"></iframe>
-    <h3>Semolina Barfi</h3>
-    <p>- In a pan take ghee. Add cardamom, bay leaves , cinnamon and cloves. Then add 1 cup of semolina and stir untill the colour changes.Add 1 cup off liquid milk and mix nicely so that any lump doesnÛªt form. Add 1/2 cup of sugar. The sugar will release some water. Keep stirring untill you reach your desired consistency.  Add 1 tbspn of condensed milk, some raisins and nut.When done, turn off the stove and place the barfi in a pan. Cut and give shape according to your preference.</p>
-</div>
-<div class="recipe-card">
-    <iframe src="https://drive.google.com/file/d/1iC8H9zY-CxLVADWLDGUyI7azuqtOWcmj/preview" allow="autoplay" loading="lazy"></iframe>
-    <h3>Mundi</h3>
-    <p>|| Mundi. Recipe - Boil rice noodles, strain and rinse under running cold water. Make e broth by roasting some whole spices and onion then add enough amount of water, ginger garlic paste, shrimp paste, chilli flakes, lemon, black pepper, shrimp bullion, tamarind paste and salt. Now serve the noodle in a pot with some fried onion, hot boiled oil, chilli flakes, dry shrimp powder, fried chicken and shrimp, egg, coriander, lemon slice and the prepared broth. Serve hot.</p>
-</div>
-<div class="recipe-card">
-    <iframe src="https://drive.google.com/file/d/1zFytgf145BR6omsvWR3jI6DL6bmSwd4c/preview" allow="autoplay" loading="lazy"></iframe>
-    <h3>Basbousa</h3>
-    <p>Basbousa||Semolina cake. Recipe - Take 1/2 cup yoghurt , 1/2 sugar / any sugar substitute ( you may increase the amount, If you prefer more sweetness), 1/4 cup oil, vanilla essence and whisk together. Then add 1 cup semolina / 1/2 cup semolina and 1/2 cup Ap flour if you prefer cake like texture , 1 tea spoon baking powder , little amount of liquid milk , coconut flakes and mix untill smooth batter is formed. Pour in the mixture in a butter brushed pan and bake at 360 degree farenheit for 20-25 minute and broil for 3/5 minute. Lastly, pour sugar syrup.</p>
-</div>
-<div class="recipe-card">
-    <iframe src="https://drive.google.com/file/d/1enErOlmXSoGTFEYDCZ_L5KCXzxJxS-do/preview" allow="autoplay" loading="lazy"></iframe>
-    <h3>beef sheek kebab</h3>
-    <p>Beef Sheek Kebab. Recipe - With beef keema add minced onion,cilantro, green chilli and mint. Then add ginger garlic paste, youghurt, black pepper , red chilli powder , cumin coriander powder , garam masala, chilli flakes ,salt and butter. Mix,mix and shape them nicely. Fry them thoroughly with butter in a pan.</p>
-</div>
-<div class="recipe-card">
-    <iframe src="https://drive.google.com/file/d/1UCZmjtpYApCzCYogKqz1TNi47oYmY0Ty/preview" allow="autoplay" loading="lazy"></iframe>
-    <h3>kebab platter</h3>
-    <p>Best if served with coconut /mango/vanilla icecream.</p>
-</div>
-<div class="recipe-card">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/P56bYJXx8Ak" title="Chicken Roast Recipe Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-    <h3>Chicken Roast</h3>
-    <p>Biye bari style chicken roast. Recipe - Marinate leg quarters with red chilli powder and salt. Shallow fry them. In the same oil fry some onion and whole spices untill the onions turn brown. Then add ginger garlic paste, onion and almond paste. Add red chilli powder , turmeric powder, Cumin-Coriander powder, Garam masala and mix nicely. Add youghurt and cook untill the oil separates. Now, add the chicken. Then add black pepper, green chilli, garam masala, milk powder, raisins, kewra water, salt. Lastly, add fried onion and cook untill the gravy thickens</p>
-</div>
-<div class="recipe-card">
-    <iframe src="https://drive.google.com/file/d/1R2FFrNVI-_D4MXoRO0RE3P77SKP9jRa2/preview" allow="autoplay" loading="lazy"></iframe>
-    <h3>Butter garlic toast</h3>
-    <p>Butter Garlic Toast. Recipe- Fry some garlic,mash them. Then add cilantro, chilli flakes and butter. Spread the mix over bread. Grate some mozzarella cheese over it. Sprinkle some permasean cheese over the bread. (You may skip it). Airfry at 400 degree farenheit for 5/6 min</p>
-</div>
-<div class="recipe-card">
-    <iframe src="https://drive.google.com/file/d/1qhAG5yys0z0HQ3teawX3xnT1Fe_umqlr/preview" allow="autoplay" loading="lazy"></iframe>
-    <h3>Chicken 65 biriyani</h3>
-    <p>Chicken 65 biriyani. Recipe - Marinate chicken cubes with beaten egg, corn starch, ginger garlic paste, red chilli powder, cumin-coriander powder, garam masala, black pepper, baking powder, salt and pinch of orange food color (forgot to add the clip) Now fry them untill crispy. In another pan fry onion untill golden brown. Now in a pan take oil and sautee some green chilli, curry leaves, cilantro, garlic cloves and tomatoes. Then add ginger garlic paste, the fried onion. Now add red chilli powder ,turmeric powder, cumin coriander powder, garam masala. Add beated yoghurt and a paste of onion-almond-cumin. Add salt and cook by covering. When the oil separates add half of the fried chicken. Meanwhile, boil rice in another pot and when done do the layering as your preference. Now cook im dum for another 20 min in medium low heat</p>
-</div>
-
+                <iframe src="https://drive.google.com/file/d/1Or2_6IQfVUpdpXx-JGbKneEb0kj8ogdA/preview" allow="autoplay" loading="lazy"></iframe>
+                <h3>Semolina Barfi</h3>
+                <div class="button-container">
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <iframe src="https://drive.google.com/file/d/1iC8H9zY-CxLVADWLDGUyI7azuqtOWcmj/preview" allow="autoplay" loading="lazy"></iframe>
+                <h3>Mundi</h3>
+                <div class="button-container">
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <iframe src="https://drive.google.com/file/d/1zFytgf145BR6omsvWR3jI6DL6bmSwd4c/preview" allow="autoplay" loading="lazy"></iframe>
+                <h3>Basbousa</h3>
+                <div class="button-container">
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <iframe src="https://drive.google.com/file/d/1enErOlmXSoGTFEYDCZ_L5KCXzxJxS-do/preview" allow="autoplay" loading="lazy"></iframe>
+                <h3>Beef Sheek Kebab</h3>
+                <div class="button-container">
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <iframe src="https://drive.google.com/file/d/1UCZmjtpYApCzCYogKqz1TNi47oYmY0Ty/preview" allow="autoplay" loading="lazy"></iframe>
+                <h3>Kebab Platter</h3>
+                <div class="button-container">
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/P56bYJXx8Ak" title="Chicken Roast Recipe Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                <h3>Chicken Roast</h3>
+                <div class="button-container">
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <iframe src="https://drive.google.com/file/d/1R2FFrNVI-_D4MXoRO0RE3P77SKP9jRa2/preview" allow="autoplay" loading="lazy"></iframe>
+                <h3>Butter Garlic Toast</h3>
+                <div class="button-container">
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <iframe src="https://drive.google.com/file/d/1qhAG5yys0z0HQ3teawX3xnT1Fe_umqlr/preview" allow="autoplay" loading="lazy"></iframe>
+                <h3>Chicken 65 Biriyani</h3>
+                <div class="button-container">
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
         </div>
         <div class="pagination">
-<a href="recipes1.html">1</a><a href="recipes2.html">2</a><a href="recipes3.html">3</a><a href="recipes4.html">4</a><a href="recipes5.html">5</a>
+            <a href="recipes1.html">1</a><a href="recipes2.html">2</a><a href="recipes3.html">3</a><a href="recipes4.html">4</a><a href="recipes5.html">5</a>
         </div>
         <a href="https://drive.google.com/drive/folders/10GVMCzCD2RFEqtklCmbJylTPzq7Vo4qt?usp=sharing" class="see-more-button">See More Recipes</a>
     </section>
@@ -218,8 +244,7 @@
             let cards = document.getElementsByClassName("recipe-card");
             for (let i = 0; i < cards.length; i++) {
                 let title = cards[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
-                let description = cards[i].getElementsByTagName("p")[0].innerText.toLowerCase();
-                if (title.includes(input) || description.includes(input)) {
+                if (title.includes(input)) {
                     cards[i].style.display = "";
                 } else {
                     cards[i].style.display = "none";
